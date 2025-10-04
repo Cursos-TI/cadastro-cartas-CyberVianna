@@ -64,7 +64,7 @@ Dados utilizados: Código:B03, Cidade: Salvador, Pop:2.564.204
     scanf("%d", &turismo2);
 
 /*Adicionando operadores matemáticos para os cálculos de
- densidada populacional e PIB per capita da carta1.*/
+ densidade populacional e PIB per capita da carta1.*/
 
     float densidade = (float) populacao / area;
     double pibpercapita = pib / populacao;
@@ -76,11 +76,11 @@ Dados utilizados: Código:B03, Cidade: Salvador, Pop:2.564.204
     float   superpoder = (float) populacao + area + pib + pibpercapita + inverso;
 
 //Resultado do cadastramento da Carta 1:
-    printf("Carta 1:\n");
+    printf("Carta 1: Espírito Santo\n");
     printf("Estado: %c\n", inicial);
     printf("Código: %s\n", codigo);
     printf("Nome da Cidade: %s\n", nome);
-    printf("População: %d\n", populacao);
+    printf("População: %lu\n", populacao);
     printf("Área: %.2fKm²\n", area);
     printf("PIB: %.2fbilhões de reais\n", pib);
     printf("Número de Pontos Turísticos: %d\n", turismo);
@@ -101,11 +101,11 @@ Dados utilizados: Código:B03, Cidade: Salvador, Pop:2.564.204
     float   superpoder2 = (float) populacao2 + area2 + pib2 + pibpercapita2 + inverso2;
 
     //Resultado do cadastramento da Carta 2:
-    printf("Carta 2:\n");
+    printf("Carta 2: Bahia\n");
     printf("Estado: %c\n", inicial2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", nome2);
-    printf("População: %d\n", populacao2);
+    printf("População: %lu\n", populacao2);
     printf("Área: %.2fKm²\n", area2);
     printf("PIB: %.2fbilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", turismo2);
@@ -113,8 +113,8 @@ Dados utilizados: Código:B03, Cidade: Salvador, Pop:2.564.204
     printf("PIB per Capita: %.2f milhões de reais\n", pibpercapita2);
     printf("Super Poder: %.2f\n", superpoder2);
 
-// Área de Comparação das Cartas
-
+/* Área de Comparação das Cartas básicas do tema 2: 
+(Coloquei comentada para não aparecer na saída de dados)
     printf("Comparação das Cartas:\n");
 
     printf("População: Carta 2 venceu %d\n", (populacao > populacao2));
@@ -123,7 +123,25 @@ Dados utilizados: Código:B03, Cidade: Salvador, Pop:2.564.204
     printf("Pontos Turísticos: Carta 2 venceu %d\n", (turismo >  turismo2));
     printf("Densidade Populacional: Carta 1 venceu %d\n", (densidade < densidade2));
     printf("PIB Per Capita: Carta 1 venceu %d\n", (pibpercapita > pibpercapita2));
-    printf("Super Poder: Carta 2 venceu %d\n", (superpoder > superpoder2));
+    printf("Super Poder: Carta 2 venceu %d\n", (superpoder > superpoder2)); */
+
+/*Aplicação da lógica do jogo utilizando estrutura de decisão IF - ELSE para realizar comparação
+das cartas por atributos. */
+
+   printf("Comparação de Cartas (Atributo: População)\n");
+   printf("Carta 1 - Espírito Santo (ES): %lu\n", populacao);
+   printf("Carta 2 - Bahia (BA): %lu\n", populacao2);
+
+    if (populacao > populacao2){
+        printf("Carta 1 (Espírito Santo) VENCEU!\n");
+    } else {
+        printf("Carta 2 (Bahia) VENCEU!\n");
+    }
+    
+
+
+
+
 
 
 
