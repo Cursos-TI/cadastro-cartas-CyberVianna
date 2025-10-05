@@ -89,7 +89,7 @@ Dados utilizados: Código:B03, Cidade: Salvador, Pop:2.564.204
     printf("Super Poder: %.2f\n", superpoder);
 
 /*Adicionando operadores matemáticos para os cálculos de
- densidada populacional e PIB per capita da carta2.*/
+ densidade populacional e PIB per capita da carta2.*/
 
     float densidade2 = (float) populacao2 / area2;
     double pibpercapita2 = pib2 / populacao2;
