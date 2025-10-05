@@ -117,6 +117,7 @@ Dados utilizados: Código:B03, Cidade: Salvador, Pop:2.564.204
 (Coloquei comentada para não aparecer na saída de dados)
     printf("Comparação das Cartas:\n");
 
+<<<<<<< HEAD
     printf("População: Carta 2 venceu %d\n", (populacao > populacao2));
     printf("Área: Carta 2 venceu %d\n", (area > area2));
     printf("PIB: Carta 2 venceu %d\n", (pib > pib2));
@@ -142,6 +143,15 @@ das cartas por atributos. */
 
 
 
+=======
+    printf("População:  %d\n", (populacao > populacao2));
+    printf("Área:  %d\n", (area > area2));
+    printf("PIB:  %d\n", (pib > pib2));
+    printf("Pontos Turísticos:  %d\n", (turismo >  turismo2));
+    printf("Densidade Populacional:  %d\n", (densidade < densidade2));
+    printf("PIB Per Capita:  %d\n", (pibpercapita > pibpercapita2));
+    printf("Super Poder:  %d\n", (superpoder > superpoder2));
+>>>>>>> 745e242 (Atualiza mensagens de comparação das cartas para exibir resultados sem indicar vencedor)
 
 
 
